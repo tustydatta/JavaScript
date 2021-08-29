@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Never Creates Strings as Objects</h2>
+<p>Strings and objects cannot be safely compared.</p>
+
+<p id="demo"></p>
+
+<script>
+	let x = "Tusty";
+	let y = new String("Tusty");
+
+	document.getElementById("demo").innerHTML = (x==y);	
+</script>
+
+<p>When using the === operator, equal values may not be equal, because the === operator expects equality in both data type and value.</p>
+
+<p id="demo1"></p>
+
+
+<script>
+	let a = "John";
+	let b = new String("John");
+	document.getElementById("demo1").innerHTML = (x===y);
+</script>
+
+</body>
+</html>
