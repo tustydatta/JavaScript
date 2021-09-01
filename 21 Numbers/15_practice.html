@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+
+<p id="demo"></p>
+
+<script>
+	let num = 2;
+	let txt = "";
+	while(num != Infinity) {
+		num = num * num;
+		txt = txt + num + "<br>";
+	}
+	document.getElementById("demo").innerHTML = txt;
+</script>
+
+</body>
+</html>
